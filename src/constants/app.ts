@@ -1,9 +1,6 @@
 import { AppChangelog } from '@interfaces/common';
 
 import { default_img_1 } from './common';
-import { default_img_2 } from './common';
-import { exclusive_img_1 } from './common';
-import { exclusive_img_2 } from './common';
 
 // eslint-disable-next-line import/prefer-default-export
 export const APP_VERSIONS: Array<AppChangelog> = [
