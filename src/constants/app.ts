@@ -12,7 +12,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
     images: [default_img_1, default_img_2],
     changelogs: [{
       supportAndroidVersion: '9+',
-      version: 1.7.4,
+      version: 1.6,
       download: '', // ссылка на apk
       date: '29.02.24',
       isCurrentVersion: true,
