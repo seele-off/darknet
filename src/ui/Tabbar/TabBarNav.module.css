@@ -1,0 +1,11 @@
+.navItem {
+  flex: 1;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}

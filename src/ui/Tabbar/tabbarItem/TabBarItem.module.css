@@ -1,0 +1,11 @@
+.tabBarItem {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.tabBarItem.active {
+  height: auto;
+  transition: all 0.3s ease;
+}

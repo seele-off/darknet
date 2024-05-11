@@ -1,0 +1,259 @@
+.sectionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 95vh;
+}
+
+.sectionContent {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.appTitle {
+  margin-top: 3rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--red)
+}
+
+.btn {
+  transition: all 200ms ease-in-out;
+  background-color: var(--redTransparent);
+  width: 12rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  color: var(--red);
+  margin-top: 3rem;
+}
+
+.btn:hover {
+  background-color: var(--red);
+  width: 13rem;
+  color: var(--white)
+}
+
+.tickerItem {
+  padding: 0 15px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: 'inherit'
+}
+
+.sectionTitle {
+  margin-bottom: 3.5rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--black);
+}
+
+.appImage {
+  max-width: 360px;
+  width: 100%;
+  height: 500px;
+}
+
+.imagePreview {
+  width: 170px;
+  height: 250px;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.imagesWrapper {
+  max-width: 900px;
+  margin-top: 7px;
+}
+
+.changelogsList {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.appVersionDescriptionWrapper {
+  padding: 15px;
+  background-color: var(--lightGray);
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.changesListWrapper {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 35px;
+  flex-grow: 1;
+}
+
+.changesList {
+  padding: 10px 0px 0px 10px;
+  width: 100%;
+}
+
+.changesListItem {
+  padding: 5px;
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.changesListBottomInfo {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.changesListBottomInfoName {
+  border-radius: 12px;
+  font-size: 14px;
+  background-color: var(--blue);
+  padding: 5px 10px;
+  color: var(--white);
+  margin-right: 10px;
+}
+
+.changesListBottomInfoSupport {
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.downloadApplink {
+  color: var(--black);
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.downloadApplink:hover {
+  color: var(--red);
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.appVersionDescription {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.status {
+  border-radius: 12px;
+  background-color: var(--lightGray);
+  padding: 5px 15px;
+}
+
+.statusActive {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.changelogsListItem {
+  display: flex;
+}
+
+.appInfoButton {
+  border: none;
+  background-color: var(--red);
+  border-radius: 12px;
+  color: var(--white);
+  height: 30px;
+  font-weight: 500;
+  padding: 0 10px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.appInfoButton:hover {
+  transition: all 200ms ease;
+  opacity: 0.8;
+}
+
+.appInfoButtonIconWrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.appInfoButtonText {
+  margin-left: 5px;
+}
+
+.table {
+  overflow-x: auto;
+}
+
+.table th {
+  padding: 0.75rem;
+  vertical-align: middle;
+  align-items: center;
+  font-weight: 500;
+}
+
+.table thead tr th {
+  border-bottom: 1px solid var(--gray);
+}
+
+.downloadContent {
+  max-width: 820px;
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .sectionTitle {
+    font-size: 3rem;
+  }
+
+
+  .appDescription {
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .appTitle {
+    font-size: 2.5rem;
+  }
+
+  .appDescription {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 465px) {
+  .table th {
+    padding: 0.3rem;
+  }
+
+  .status {
+    font-size: 13px;
+  }
+
+  .appInfoButtonIconWrapper {
+    flex-direction: column;
+  }
+
+  .appInfoButton {
+    height: 45px;
+    font-size: 13px;
+  }
+}

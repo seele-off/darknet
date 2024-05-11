@@ -1,0 +1,98 @@
+.outerContainer {
+  position: relative;
+  width: 100%;
+}
+
+
+
+.horizontalScroll {
+  width: 100%;
+  user-select: none;
+  will-change: transform;
+  white-space: nowrap;
+  overflow: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  /* IE и Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  position: relative;
+}
+
+.horizontalScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.horizontalScrollСontent {
+  display: inline-flex;
+}
+
+.horizontalScrollСontent>* {
+  flex-shrink: 0;
+}
+
+.horizontalScrollItem {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  /* Добавлено для позиционирования поверх контента */
+}
+
+.nextButton svg {
+  transform: rotate(180deg);
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-10px);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounce {
+  animation: bounce 0.3s ease-out;
+}

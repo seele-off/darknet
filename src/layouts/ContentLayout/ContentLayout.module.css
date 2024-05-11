@@ -1,0 +1,21 @@
+.contentWrapper {
+  max-width: var(--full-hd-width-screen);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 4rem;
+}
+
+@media (max-width: 850px) {
+  .contentWrapper {
+    max-width: var(--full-hd-width-screen);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentWrapper {
+    padding: 5px;
+  }
+}

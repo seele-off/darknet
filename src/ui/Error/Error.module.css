@@ -1,0 +1,50 @@
+.errorContainer {
+  /* background: ; */
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200;
+  margin: 0 auto;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 10px;
+  flex-direction: column;
+}
+
+.errorTitle {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10rem;
+}
+
+.statusCodeText {
+  font-size: 16px;
+  margin-top: 19px;
+}
+
+.link {
+  font-size: 16px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  margin-top: 19px;
+  color: var(--gray);
+  font-weight: 600;
+}
+
+.link:hover {
+  opacity: 0.7;
+  transition: 'opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms';
+}
+
+@media (max-width: 700px) {
+  .errorContainer {
+    padding: '0 5px';
+  }
+}
+
+@media (max-width: 400px) {
+  .errorContainer {
+    padding: '0 5px';
+  }
+}

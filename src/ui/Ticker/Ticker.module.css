@@ -1,0 +1,26 @@
+.ticker {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tickerContent {
+  display: flex;
+  align-items: center;
+  animation: ticker 1s linear infinite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes ticker {
+  0% {
+    left: 0;
+  }
+
+  100% {
+    left: -122px;
+  }
+}
