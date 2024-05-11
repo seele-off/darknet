@@ -6,7 +6,7 @@ import { PHONE_IMAGE } from './common';
 export const APP_VERSIONS: Array<AppChangelog> = [
   {
     appName: 'Default',
-    descrition: 'Test Простой мод без каких-либо дополнительных функций.',
+    descrition: 'Простой мод без каких-либо дополнительных функций.',
     images: [PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE],
     changelogs: [{
       supportAndroidVersion: '9+',
