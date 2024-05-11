@@ -16,7 +16,7 @@
   margin-top: 3rem;
   font-size: 4rem;
   line-height: 1;
-  color: var(--red)
+  color: var(--red);
 }
 
 .btn {
@@ -36,14 +36,14 @@
 .btn:hover {
   background-color: var(--red);
   width: 13rem;
-  color: var(--white)
+  color: var(--white);
 }
 
 .tickerItem {
   padding: 0 15px;
   font-size: 1.5rem;
   font-weight: 700;
-  color: 'inherit'
+  color: 'inherit';
 }
 
 .sectionTitle {
@@ -54,9 +54,10 @@
 }
 
 .appImage {
-  max-width: 360px;
+  max-width: 350px;
   width: 100%;
-  height: 500px;
+  max-height: 600px;
+  height: 100%;
 }
 
 .imagePreview {
@@ -216,7 +217,6 @@
   .sectionTitle {
     font-size: 3rem;
   }
-
 
   .appDescription {
     font-size: 1.3rem;
