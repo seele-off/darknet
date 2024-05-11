@@ -1,13 +1,16 @@
 import { AppChangelog } from '@interfaces/common';
 
-import { PHONE_IMAGE } from './common';
+import { default_img_1 } from './common';
+import { default_img_2 } from './common';
+import { exclusive_img_1 } from './common';
+import { exclusive_img_2 } from './common';
 
 // eslint-disable-next-line import/prefer-default-export
 export const APP_VERSIONS: Array<AppChangelog> = [
   {
     appName: 'Default',
     descrition: 'Простой мод без каких-либо дополнительных функций.',
-    images: [PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE],
+    images: [default_img_1, default_img_2],
     changelogs: [{
       supportAndroidVersion: '9+',
       version: 1.6,
