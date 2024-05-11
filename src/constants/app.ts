@@ -1,13 +1,15 @@
 import { AppChangelog } from '@interfaces/common';
 
-import { PHONE_IMAGE } from './common';
+import {
+  default_img_1, default_img_2, exclusive_img_1, exclusive_img_2,
+} from '@constants/common';
 
 // eslint-disable-next-line import/prefer-default-export
 export const APP_VERSIONS: Array<AppChangelog> = [
   {
     appName: 'Default',
     descrition: 'Простой мод без каких-либо дополнительных функций.',
-    images: [PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE],
+    images: [default_img_1, default_img_2],
     changelogs: [{
       supportAndroidVersion: '9+',
       version: 1.6,
@@ -28,7 +30,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
   {
     appName: 'Exclusive',
     descrition: 'Эксклюзивный мод, особенностью этого мода является Monet Тема (Material You)',
-    images: [],
+    images: [exclusive_img_1, exclusive_img_2],
     changelogs: [{
       version: 1.5,
       supportAndroidVersion: '9+',
@@ -45,7 +47,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
   {
     appName: 'Custom',
     descrition: 'Наш исследовательский мод, в котором может случиться немыслимое',
-    images: [PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE],
+    images: [],
     changelogs: [{
       version: 1.5,
       download: '', // ссылка на apk
