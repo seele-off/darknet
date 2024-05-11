@@ -1,21 +1,29 @@
 import { AppChangelog } from '@interfaces/common';
 
-import { default_img_1 } from './common';
+import { PHONE_IMAGE } from './common';
 
 // eslint-disable-next-line import/prefer-default-export
 export const APP_VERSIONS: Array<AppChangelog> = [
   {
     appName: 'Default',
     descrition: 'Простой мод без каких-либо дополнительных функций.',
-    images: [default_img_1, default_img_2],
+    images: [PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE, PHONE_IMAGE],
     changelogs: [{
       supportAndroidVersion: '9+',
-      version: 1.7.4,
+      version: 1.6,
       download: '', // ссылка на apk
-      date: '29.02.24',
+      date: '11/01/23',
       isCurrentVersion: true,
       changes: ['1', '2', '3'],
-    }]
+
+    },
+    {
+      version: 1.5,
+      supportAndroidVersion: '9+',
+      download: '', // ссылка на apk
+      date: '11/01/23',
+      changes: ['1', '2', '3'],
+    }],
   },
   {
     appName: 'Exclusive',
