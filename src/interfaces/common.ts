@@ -1,6 +1,6 @@
 export type AppChanges = {
   date: string;
-  version: number;
+  version: string;
   download: string;
   changes: Array<string>;
   supportAndroidVersion: string;
