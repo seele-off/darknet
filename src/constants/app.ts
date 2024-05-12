@@ -16,7 +16,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
       download: '', // ссылка на apk
       date: '29.02.24',
       isCurrentVersion: true,
-      changes: ['1', '2', '3'],
+      changes: ['Без рекламы', 'Kodik без рекламы и доступен в разрешении 720p', 'Весь мусор внутри приложения удален', 'Monet Иконки'],
     }],
   },
   {
