@@ -39,7 +39,7 @@ type TableRowType = AppChanges & {
 
 type Changes = {
   appName: string;
-  version: number;
+  version: string;
   supportAndroidVersion: string;
   changes: string[];
 };

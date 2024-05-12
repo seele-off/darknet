@@ -12,19 +12,11 @@ export const APP_VERSIONS: Array<AppChangelog> = [
     images: [default_img_1, default_img_2],
     changelogs: [{
       supportAndroidVersion: '9+',
-      version: 1.6,
+      version: '1.7.4',
       download: '', // ссылка на apk
-      date: '11/01/23',
+      date: '29.02.24',
       isCurrentVersion: true,
-      changes: ['1', '2', '3'],
-
-    },
-    {
-      version: 1.5,
-      supportAndroidVersion: '9+',
-      download: '', // ссылка на apk
-      date: '11/01/23',
-      changes: ['1', '2', '3'],
+      changes: ['Без рекламы', 'Kodik без рекламы и доступен в разрешении 720p', 'Весь мусор внутри приложения удален', 'Monet Иконки'],
     }],
   },
   {
@@ -32,7 +24,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
     descrition: 'Эксклюзивный мод, особенностью этого мода является Monet Тема (Material You)',
     images: [exclusive_img_1, exclusive_img_2],
     changelogs: [{
-      version: 1.5,
+      version: '1.5',
       supportAndroidVersion: '9+',
       download: '', // ссылка на apk
       date: '11/01/23',
@@ -49,7 +41,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
     descrition: 'Наш исследовательский мод, в котором может случиться немыслимое',
     images: [],
     changelogs: [{
-      version: 1.5,
+      version: '1.5',
       download: '', // ссылка на apk
       supportAndroidVersion: '9+',
       date: '11/01/23',
