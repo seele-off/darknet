@@ -17,14 +17,6 @@ export const APP_VERSIONS: Array<AppChangelog> = [
       date: '29.02.24',
       isCurrentVersion: true,
       changes: ['1', '2', '3'],
-
-    },
-    {
-      version: '1.5',
-      supportAndroidVersion: '9+',
-      download: '', // ссылка на apk
-      date: '11/01/23',
-      changes: ['1', '2', '3'],
     }],
   },
   {
