@@ -8,10 +8,7 @@
   "scripts": {
     "dev": "next dev -p 6677",
     "start": "next start -p 6677",
-    "build": "next build",
-    "lint": "eslint --ext .ts,.tsx ./",
-    "lint:fix": "eslint --fix --ext .ts,.tsx ./",
-    "prepare": "husky install"
+    "build": "next build"
   },
   "dependencies": {
     "clsx": "^1.2.1",
@@ -44,9 +41,5 @@
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
   }
 }
