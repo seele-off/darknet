@@ -75,6 +75,7 @@ const Main: FC = () => {
   };
 
   const getImages = (images: string[]) => images.map((img, i) => <img
+    key={i}
     onClick={() => setPrewImage(img)}
     className={style.imagePreview}
     style={{ marginRight: i + 1 === images.length ? 0 : 45 }}
