@@ -1,13 +1,20 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import axios from 'axios';
 
-interface ProfileResponse {
+type Role = {
+  id: number;
+  name: string;
+  color: string;
+}
+
+type ProfileResponse = {
   code: number;
   profile?: {
     id: number;
     is_sponsor: boolean;
     is_sponsor_transferred: boolean;
     sponsorshipExpires: number;
+    roles: Array<Role>,
     // and other types
   }
 }
@@ -25,6 +32,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         is_sponsor: true,
         is_sponsor_transferred: true,
         sponsorshipExpires: Number.MAX_SAFE_INTEGER, // Устанавливаем бессрочную дату
+        roles: [
+          {
+            id: 1,
+            name: "Разработчик",
+            color: "B656E5"
+          }
+        ],
        }
     : {};
 
