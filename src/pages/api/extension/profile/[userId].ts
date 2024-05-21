@@ -34,10 +34,20 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         sponsorshipExpires: 0,
         roles: [
           {
-            id: 1,
-            name: "Редактор",
-            color: "B656E5"
-          }
+"id": 8,
+"name": "Редактор",
+"color": "5660E5"
+},
+{
+"id": 44,
+"name": "Anixart",
+"color": "F55E5E"
+},
+{
+"id": 5,
+"name": "Jam Club",
+"color": "E57A56"
+}
         ],
        }
     : {};
