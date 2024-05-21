@@ -35,7 +35,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         roles: [
           {
             id: 1,
-            name: "Разработчик",
+            name: "Редактор",
             color: "B656E5"
           }
         ],
