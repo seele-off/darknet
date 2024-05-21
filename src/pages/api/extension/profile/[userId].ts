@@ -11,6 +11,7 @@ type ProfileResponse = {
   code: number;
   profile?: {
     id: number;
+    is_verified: boolean;
     is_sponsor: boolean;
     is_sponsor_transferred: boolean;
     sponsorshipExpires: number;
@@ -29,6 +30,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const currentProfile = anixartRes.data.profile && userId === '790852'
     ? {
        ...anixartRes.data.profile,
+        is_verified: true,
         is_sponsor: true,
         is_sponsor_transferred: true,
         sponsorshipExpires: Number.MAX_SAFE_INTEGER,
