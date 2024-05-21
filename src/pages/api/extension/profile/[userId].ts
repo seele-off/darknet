@@ -31,7 +31,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
        ...anixartRes.data.profile,
         is_sponsor: true,
         is_sponsor_transferred: true,
-        sponsorshipExpires: Number.MAX_SAFE_INTEGER, // Устанавливаем бессрочную дату
+        sponsorshipExpires: 0,
         roles: [
           {
             id: 1,
