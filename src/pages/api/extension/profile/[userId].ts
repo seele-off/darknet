@@ -33,25 +33,26 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         is_sponsor_transferred: true,
         sponsorshipExpires: Number.MAX_SAFE_INTEGER,
         roles: [
-          {
-        "id": 1,
-        "name": "Разработчик",
-        "color": "B656E5"            
-          },
-"id": 8,
-"name": "Редактор",
-"color": "5660E5"
-},
-{
-"id": 44,
-"name": "Anixart",
-"color": "F55E5E"
-},
-{
-"id": 5,
-"name": "Jam Club",
-"color": "E57A56"
-}
+            {
+              id: 1,
+              name: "Разработчик",
+              color: "B656E5"
+            },
+            {
+              id: 8,
+              name: "Редактор",
+              color: "5660E5"
+            },
+            {
+              id: 44,
+              name: "Anixart",
+              color: "F55E5E"
+            },
+            {
+              id: 5,
+              name: "Jam Club",
+              color: "E57A56"
+            }
         ],
        }
     : anixartRes.data.profile;
