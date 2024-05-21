@@ -34,11 +34,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         sponsorshipExpires: 0,
         roles: [
           {
-            
         "id": 1,
         "name": "Разработчик",
-        "color": "B656E5"
-            
+        "color": "B656E5"            
           },
 "id": 8,
 "name": "Редактор",
