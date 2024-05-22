@@ -44,7 +44,7 @@ function modifyData(data: EpisodeResponse): EpisodeResponse {
     data.types = data.types.map(type => {
       return {
         ...type,
-        workers: 'Отображается благодаря расширению MD Seele' // Изменение значения workers на 'MD Sele'
+        workers: 'Отображается благодаря расширению «MD Seele»' // Изменение значения workers на 'MD Sele'
       }
     });
   }
