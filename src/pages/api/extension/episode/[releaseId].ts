@@ -8,7 +8,7 @@ interface EpisodeResponse {
     id: number;
     name: string;
     icon: string | null;
-    workers: string;
+    workers: string | null;
     is_sub: boolean;
     episodes_count: number;
     view_count: number;
@@ -24,11 +24,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const anixartRes = await axios.get<EpisodeResponse>(anixartAPI);
     const anixartResData = anixartRes.data;
+    const modifyedData = modifyData(anixartRes.data);
 
-    if (!anixartResData.types || anixartResData.types.length === 0) {
+    if (!modifyedData.types || modifyedData.types.length === 0) {
       const seeleRes = await axios.get(seeleAPI);
 
-      res.json({ is_blocked: true, ...seeleRes.data });
+      res.json({ is_blocked: true, ...modifyData(seeleRes.data) });
     } else {
       res.json(anixartResData);
     }
@@ -36,4 +37,17 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     console.error('Error fetching data from Anixart API:', error);
     res.status(500).json({ message: 'Internal Server Error' });
   }
+}
+
+function modifyData(data: EpisodeResponse): EpisodeResponse {
+  if (data.types && data.types.length) {
+    data.types = data.types.map(type => {
+      return {
+        ...type,
+        workers: 'Отображается благодаря расширению MD Seele' // Изменение значения workers на 'MD Sele'
+      }
+    });
+  }
+
+  return data;
 }
