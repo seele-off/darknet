@@ -27,19 +27,24 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     const anixartRes = await axios.get<ProfileResponse>(anixartAPI);
 
-    const currentProfile = anixartRes.data.profile && userId === '790852'
+    const currentProfile = anixartRes.data.profile && userId === '198436'
     ? {
        ...anixartRes.data.profile,
         is_verified: true,
-        is_sponsor: true,
+        is_sponsor: false,
         is_sponsor_transferred: true,
         sponsorshipExpires: Number.MAX_SAFE_INTEGER,
         roles: [
             {
               id: 1,
-              name: "Разработчик мода",
-              color: "B656E5"
-            }
+              name: "Даббер",
+              color: "#D256E5"
+            },
+          {
+            id: 1,
+              name: "Детективное Агенство!",
+              color: "DF0576"
+          }
         ],
        }
     : anixartRes.data.profile;
