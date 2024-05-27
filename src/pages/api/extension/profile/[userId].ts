@@ -38,7 +38,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             {
               id: 1,
               name: "Разработчик мода",
-              color: "E3DEFC"
+              color: "F04E4E"
             }
         ],
        }
