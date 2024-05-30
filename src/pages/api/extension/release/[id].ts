@@ -28,17 +28,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const shikiData = shikiAnime.data;
 
     if (shikiData.length) {
-      const shikiScore = shikiData[0].score;
-      const anixartScore = data.release.grade.toFixed(2);
-      const combinedScore = `Anixart: ${anixartScore} • Shiki: ${shikiScore}`;
-
       res.status(200).json({
         ...data,
         release: {
           ...data.release,
-          grade: combinedScore,
+          grade: Number(shikiData[0].score),
         },
       });
+
     } else {
       res.status(200).json(data);
     }
