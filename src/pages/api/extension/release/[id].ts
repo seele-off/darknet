@@ -29,7 +29,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     if (shikiData.length) {
       const shikiScore = shikiData[0].score;
-      const anixartScore = data.release.grade.toFixed(1);
+      const anixartScore = data.release.grade.toFixed(2);
       const combinedScore = `Anixart: ${anixartScore} • Shiki: ${shikiScore}`;
 
       res.status(200).json({
