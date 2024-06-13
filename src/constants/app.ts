@@ -30,6 +30,16 @@ export const APP_VERSIONS: Array<AppChangelog> = [
         'Kodik без рекламы и доступен в разрешении 720p',
         'Весь мусор внутри приложения удален', 'Monet Иконки',
       ],
+    },
+      {
+      version: '1.0 Alpha',
+      supportAndroidVersion: '9+',
+      download: '', // ссылка на apk
+      date: '18/05/22',
+      changes: [
+        'Adding Serach System',
+        'Adding Bypes',
+               ],
     }],
   },
   {
