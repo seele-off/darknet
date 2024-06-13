@@ -55,17 +55,4 @@ export const APP_VERSIONS: Array<AppChangelog> = [
       ],
     }],
   },
-  {
-    appName: 'Custom',
-    descrition: 'Наш исследовательский мод, в котором может случиться немыслимое',
-    images: [],
-    changelogs: [{
-      version: '1.0',
-      date: '20/05/24',
-      isCurrentVersion: true,
-      supportAndroidVersion: '6+',
-      download: '', // ссылка на apk
-      changes: [],
-    }],
-  },
-];
+  ];
