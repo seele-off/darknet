@@ -34,7 +34,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
       {
       version: '1.0 Alpha',
       supportAndroidVersion: '9+',
-      download: '', // ссылка на apk
+      download: 'https://www.darknet.kz/download', // ссылка на apk
       date: '18/05/22',
       changes: [
         'Adding Serach System',
