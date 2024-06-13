@@ -17,7 +17,7 @@ export const APP_VERSIONS: Array<AppChangelog> = [
       ],
     changelogs: [{
       version: '1.0',
-      date: '20.05.24',
+      date: '20/05/24',
       isCurrentVersion: true,
       supportAndroidVersion: '9+',
       download: 'https://github.com/seele-off/anixart/releases/download/anixart-default/Anixart-Default-v1.0-by-Seele.apk', // ссылка на apk
